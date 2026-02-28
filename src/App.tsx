@@ -90,6 +90,7 @@ const App: React.FC = () => {
   return (
     
     <div className="container">
+      <Analytics />
       <h1>JSON Formatter 🌟</h1>
 
       {/* Dark/Light Toggle */}
