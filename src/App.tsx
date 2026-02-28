@@ -3,23 +3,7 @@ import Editor from "@monaco-editor/react";
 import type * as monaco from "monaco-editor";
 import "./App.css";
 import { Edit, Minimize2, Copy, Sun, Moon, Upload } from "lucide-react";
-
-function Analytics() {
-  return (
-    <>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.va = window.va || function () {
-              (window.vaq = window.vaq || []).push(arguments);
-            };
-          `,
-        }}
-      />
-      <script defer src="/_vercel/insights/script.js"></script>
-    </>
-  );
-}
+import { Analytics } from "@vercel/analytics/react";
 
 const App: React.FC = () => {
   const [jsonInput, setJsonInput] = useState<string>("");
