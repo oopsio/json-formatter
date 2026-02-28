@@ -3,6 +3,7 @@ import Editor from "@monaco-editor/react";
 import type * as monaco from "monaco-editor";
 import "./App.css";
 import { Edit, Minimize2, Copy, Sun, Moon, Upload } from "lucide-react";
+import { Analytics } from "@vercel/analytics/next";
 
 
 const App: React.FC = () => {
@@ -88,7 +89,9 @@ const App: React.FC = () => {
   };
 
   return (
+    
     <div className="container">
+      <Analytics />
       <h1>JSON Formatter 🌟</h1>
 
       {/* Dark/Light Toggle */}
