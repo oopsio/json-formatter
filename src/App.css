@@ -1,0 +1,97 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 5px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Error */
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+/* History */
+.history-container {
+  margin-top: 20px;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--history-bg);
+}
+
+.history-item {
+  padding: 5px;
+  cursor: pointer;
+  font-family: monospace;
+  border-bottom: 1px solid var(--history-border);
+}
+
+.history-item:hover {
+  background-color: var(--history-hover);
+}
+
+/* Themes */
+body.light {
+  --bg-color: #f0f0f0;
+  --text-color: #111;
+  --button-bg: #4CAF50;
+  --button-text: #fff;
+  --history-bg: #e0e0e0;
+  --history-border: #ccc;
+  --history-hover: #d0d0d0;
+}
+
+body.dark {
+  --bg-color: #121212;
+  --text-color: #fff;
+  --button-bg: #4CAF50;
+  --button-text: #fff;
+  --history-bg: #1e1e1e;
+  --history-border: #333;
+  --history-hover: #2a2a2a;
+}
+
+/* File input styling */
+.file-input {
+  margin: 10px 0;
+}
